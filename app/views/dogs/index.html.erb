@@ -1,0 +1,16 @@
+<h1>List of Dogs</h1>
+
+<table>
+  <% @dogs.each do |dog| %>
+    <tr>
+      <td><%= dog.name %></td>
+      <td><%= button_to 'Show', dog_path(dog), method: 'get' ,class: "button-show"%></td>
+      <td><%= button_to 'Edit', edit_dog_path(dog), method: 'get' ,class: "button-edit "%></td>
+      <td ><%= button_to 'Remove', dog_path(dog), method: 'delete', data: { confirm: 'Are you sure?' }, 
+      class: "button-remove" %></td>
+  <% end %>
+</table>
+
+<br>
+<%= link_to "Add New", new_dog_path, class: "button-control" %>
+
