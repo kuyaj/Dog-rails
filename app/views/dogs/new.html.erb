@@ -1,7 +1,8 @@
-<h3>Create a Dog</h3>
 <%= form_with model: @dog do |form| %>
   <%= form.text_field :name, placeholder: "name" %>
   <%= form.text_field :motto, placeholder: "motto" %>
+  <%= form.label "Dog photo" %>
+  <%= form.file_field :avatar %>
 
   <%= form.submit "Create dog", class: "button-default" %>
 <% end %>

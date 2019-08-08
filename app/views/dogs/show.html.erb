@@ -1,5 +1,9 @@
-<h1>Show</h1>
 <h2><%= @dog.name %></h2>
 <h4><%= @dog.motto %></h4>
 
+<% if @dog.avatar.attached? %>
+  <img src="<%=(url_for(@dog.avatar))%>" alt="">
+<% end %>
+
 <%= link_to "Back", root_path, class: "button-control"%>  
+<%= link_to "Edit", edit_dog_path(@dog), class: "button-control"%>  

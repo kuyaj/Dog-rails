@@ -22,7 +22,6 @@ class DogsController < ApplicationController
 
   def create
     dog = Dog.create(dog_params)
-
     redirect_to dogs_path
   end
 
@@ -38,6 +37,6 @@ class DogsController < ApplicationController
   end
 
   def dog_params
-    params.require(:dog).permit(:name, :motto)
+    params.require(:dog).permit(:name, :motto, :avatar)
   end
 end
