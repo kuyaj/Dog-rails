@@ -1,9 +1,25 @@
-<h2><%= @dog.name %></h2>
-<h4><%= @dog.motto %></h4>
+<div class="container">
+<div class="segment-group">
 
-<% if @dog.avatar.attached? %>
-  <img src="<%=(url_for(@dog.avatar))%>" alt="">
-<% end %>
+  <div class="segment">
+      <div class="segment-label"><b>Name: </b><%= @dog.name %></div>
+      <div class="segment-label"><b>Motto: </b><%= @dog.motto %></div>
+      
+      <div class="segment-button-group">
+         <button class="button-control"><%= link_to 'Edit', edit_dog_path(@dog), method: 'get'%></button>
+         <button class="button-control"><%= link_to 'Remove', dog_path(@dog), method: 'delete', data: { confirm: 'Are you sure?' }%></button>   
+      </div>
+  </div>
+  
+  <div class="segment-compact-show">
+    <div class="segment-image"> 
+           <% if @dog.avatar.attached? %>
+              <img src="<%=(url_for(@dog.avatar))%>" >
+          <% end %>
+      </div>
+  </div>
 
-<%= link_to "Back", root_path, class: "button-control"%>  
-<%= link_to "Edit", edit_dog_path(@dog), class: "button-control"%>  
+</div>
+</div>
+
+

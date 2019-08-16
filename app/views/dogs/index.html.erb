@@ -1,16 +1,20 @@
-<h1>List of Dogs</h1>
-
-<table>
+<div class="container">
+  <div class="card-group">
   <% @dogs.each do |dog| %>
-    <tr>
-      <td><%= dog.name %></td>
-      <td><%= button_to 'Show', dog_path(dog), method: 'get' ,class: "button-show"%></td>
-      <td><%= button_to 'Edit', edit_dog_path(dog), method: 'get' ,class: "button-edit "%></td>
-      <td ><%= button_to 'Remove', dog_path(dog), method: 'delete', data: { confirm: 'Are you sure?' }, 
-      class: "button-remove" %></td>
+     <div class="card">
+        <div class="card-header"><%= dog.name %></div>
+         <div class="card-image"> 
+           <% if dog.avatar.attached? %>
+              <img src="<%=(url_for(dog.avatar))%>" >
+          <% end %>
+         </div>
+         <div class="card-footer">
+          <button class="card-button"> <%= link_to 'Show', dog_path(dog), method: 'get' %></button>
+          <button class="card-button"><%= link_to 'Edit', edit_dog_path(dog), method: 'get'%></button>
+          <button class="card-button">  <%= link_to 'Remove', dog_path(dog), method: 'delete', 
+              data: { confirm: 'Are you sure?' }%></button>
+         </div> 
+       </div>
   <% end %>
-</table>
-
-<br>
-<%= link_to "Add New", new_dog_path, class: "button-control" %>
-
+</div>
+</div>

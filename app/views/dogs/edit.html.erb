@@ -1,11 +1,32 @@
+<div class="container">
+<div class="segment-group">
 
-<%= form_with model: @dog do |form|  %>
-  <%= form.text_field :name, placeholder: "name" %>
-  <%= form.text_field :motto, placeholder: "motto" %>
-  <%= form.label "Dog   photo" %>
-  <%= form.file_field :avatar %>
-  <%= form.submit "Save", class: "button-default"%>
-<% end %>
+  <div class="segment">
+    <%= form_with model: @dog do |form| %>
+      <div class="segment-input">
+        <%= form.text_field :name, placeholder: "Name"%>
+      </div>
+      <div class="segment-input">
+        <%= form.text_field :motto, placeholder: "Motto"%>
+      </div>
+      <div class="segment-input">
+        <%= form.file_field :avatar, placeholder: "Upload photo", class: "inputfile" %>
+        <%= form.label "Choose a file", for: "dog_avatar" %>
+      </div> 
+      <div class="segment-button-group">  
+        <%= form.submit "Edit", class: "button-control" %>  
+      </div>
+    <% end %>
+  </div>
 
-<br><br>
-<%= link_to "Back", root_path, class: "button-control"%>  
+ <div class="segment-compact">
+    <div class="segment-image"> 
+        <% if @dog.avatar.attached? %>
+          <img src="<%=(url_for(@dog.avatar))%>" >
+        <% end %>
+      </div>
+  </div>
+
+</div>
+</div>
+
