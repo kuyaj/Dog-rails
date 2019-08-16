@@ -39,6 +39,7 @@
      color: #bdc3c7;
      padding: 5px 5px;
      margin: 5px 0 0;
+     font-family: 'Lexend Deca', sans-serif;
    }
 
    .segment-label {
@@ -47,6 +48,7 @@
      color: #101010;
      padding: 5px 5px;
      margin: 5px 0 0;
+     font-family: 'Lexend Deca', sans-serif;
    }
 
    .segment-input > input {
@@ -54,6 +56,7 @@
      outline: 0;
      font-size: inherit;
      font-family: inherit;  
+     width: 100%;
    }
 
    .segment-button {
@@ -62,7 +65,7 @@
    }
 
    .segment-image img {
-     width: 100%;    
+     width: 100%;    segment
    }
 
    /* changed */

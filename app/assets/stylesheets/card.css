@@ -14,7 +14,7 @@
   }
 
   .card-group .card .card-image img {
-    max-width: 100%;
+   width: 100%
   }
 
   .card-group .card > .card-header {
@@ -36,6 +36,7 @@
     border-radius: 2px;
     padding: inherit;
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
     margin: 1px 2px;
     background: white;
   }
