@@ -4,13 +4,13 @@
   <div class="segment">
     <%= form_with model: @dog do |form| %>
       <div class="segment-input">
-        <%= form.text_field :name, placeholder: "Name"%>
+        <%= form.text_field :name, placeholder: "Name", required: true%>
       </div>
       <div class="segment-input">
-        <%= form.text_field :motto, placeholder: "Motto"%>
+        <%= form.text_field :motto, placeholder: "Motto", required: true%>
       </div>
       <div class="segment-input">
-        <%= form.file_field :avatar, placeholder: "Upload photo", class: "inputfile" %>
+        <%= form.file_field :avatar, placeholder: "Upload photo", class: "inputfile" , required: true %>
         <%= form.label "Choose a file", for: "dog_avatar" %>
       </div> 
       <div class="segment-button-group">  
