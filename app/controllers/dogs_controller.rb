@@ -20,8 +20,8 @@ class DogsController < ApplicationController
     redirect_to dogs_path
   end
 
-  def create
-    dog = Dog.create(dog_params)
+  def create  
+    dog = Dog.create(dog_params).blank?
     redirect_to dogs_path
   end
 
