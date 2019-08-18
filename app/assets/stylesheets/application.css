@@ -45,6 +45,18 @@ ul > li {
   flex:1;
 }
 
+.button-control:disabled  {
+  border: 1px solid #95a5a6;
+  border-radius: 2px;
+  padding: 10px;
+  background: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  margin: 5px;
+  flex:1;
+}
+
+
 .button-control a {
   color: #101010;
   text-decoration: none;
