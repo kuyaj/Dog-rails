@@ -10,18 +10,8 @@
   </head>
 
   <body>
-  <nav class="navbar">
-    <div class="navbar-brand"> Dog Shop</div>
-    <div class="navbar-item">
-      <%= link_to "Home", root_path, class: "button-control"  %>
-    </div>
-     <div class="navbar-item">
-      <%= link_to "Add New", new_dog_path , class: "button-control" , id: "add-new"%> 
-    </div>  
-    <div class="navbar-item">
-      <a href="#" class="button-control">Login</a>
-    </div>
-  </nav>
-   <%= yield %>
+    <%= render 'layouts/navbar' %>
+    <%= yield %>
   </body>
 </html>
+<%=  %>
