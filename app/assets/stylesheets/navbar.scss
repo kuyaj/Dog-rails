@@ -1,0 +1,42 @@
+ $navbar_shadow: 0 0px 1px rgba(0,0,0,0.16), 0 0px 1px rgba(0,0,0,0.23);
+ $navbar_font_family: 'Lexend Deca', sans-serif;
+ $navbar_white: #fff;
+
+  .navbar {
+      background: $navbar_white;
+      font-size: 24px;
+      font-family: $navbar_font_family;
+      color: #101010; 
+      display:flex;
+      flex-wrap: wrap;  
+      flex-basis: 50%;  
+      border: transparent;
+      box-shadow: $navbar_shadow;
+
+      .navbar-brand {
+        border: inherit;
+        padding: 25px;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit; 
+      }
+
+      .navbar-item {
+        border: inherit;
+        padding: 25px 5px;
+        color: inherit;
+        font-family: inherit;
+        font-size: 20px;
+      }
+
+      .navbar-item:nth-child(3){
+        flex: 2;
+      }
+
+      a {
+        text-decoration: none;
+        color: #101010;
+      }
+    }
+
+  

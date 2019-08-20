@@ -2,8 +2,10 @@
 
 @import url('./card.css');
 @import url('./navbar.css');
-@import url('./form.css');
+@import url('./segment.css');
 
+$app_font_family: 'Lexend Deca', sans-serif;
+$app_white: #fff;
 
 body {
   margin: 0;
@@ -39,10 +41,15 @@ ul > li {
   border-radius: 2px;
   padding: 10px;
   background: white;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: $app_font_family;
   font-size: 15px;
   margin: 5px;
   flex:1;
+
+  a {
+    color: #101010;
+    text-decoration: none;
+  }
 }
 
 .button-control:disabled  {
@@ -50,17 +57,14 @@ ul > li {
   border-radius: 2px;
   padding: 10px;
   background: white;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: $app_font_family;
   font-size: 15px;
   margin: 5px;
   flex:1;
 }
 
 
-.button-control a {
-  color: #101010;
-  text-decoration: none;
-}
+
 
 .button-control-success {
   border: transparent;
@@ -69,7 +73,7 @@ ul > li {
   padding: 10px;
   font-size: 15px;
   margin: 5px;
-  color: #fff;
+  color: $app_white;
   font-weight: bold;
   flex: 2;
 }
@@ -81,21 +85,15 @@ ul > li {
   padding: 10px;
   font-size: 15px;
   margin: 5px;
-  color: #fff;
+  color: $app_white;
   font-weight: bold;
   flex: 2;
-}
 
-.button-control-info a {
-  border: transparent;
-  border-radius: 2px;
-  background: #3498db;
-  padding: 10px;
-  font-size: 15px;
-  margin: 5px;
-  color: #fff;
-  font-weight: bold;
-  flex: 2;
+  a {
+  color: $app_white;
   text-decoration: none;
 }
+
+}
+
 

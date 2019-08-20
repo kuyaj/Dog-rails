@@ -1,0 +1,112 @@
+$card_font_family: 'Lexend Deca', sans-serif;
+$card_shadow: 0 0px 1px rgba(0,0,0,0.12), 0 0px 1px rgba(0,0,0,0.12);
+$card_transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ 
+ .card-group {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;    
+    font-family: $card_font_family;
+
+    .card {
+      border: transparent;
+      box-shadow: $card_shadow;
+      transition: $card_transition;
+      
+      .card-header {
+        border: inherit;
+        padding: 5px;
+        font-size: 15px;  
+      }
+
+      .card-image img {
+        width: 100%
+      }
+  
+      .card-footer {
+        border: inherit;
+        padding: 8px;
+        font-size: 15px;
+        display: flex;
+        
+        .card-button {
+          border: 1px solid #101010;
+          border-radius: 2px;
+          padding: inherit;
+          font-family: $card_font_family;
+          font-size: 15px;
+          margin: 1px 2px;
+          background: white;
+
+          a {
+            color: #101010;
+            text-decoration: none;
+          }
+        }
+
+      }
+    }
+
+  }
+
+
+  .card-single {
+    width: 30%;
+    font-family: $card_font_family;
+
+    .card {
+      border: transparent;
+      box-shadow: 0 0px 1px rgba(0,0,0,0.12), 0 0px 1px rgba(0,0,0,0.12);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+      .card-header {
+        border: inherit;
+        padding: 5px;
+        font-size: 15px;  
+      }
+      
+      .card-image img {
+        width: 100%;
+      }
+
+      .card-footer {
+        border: inherit;
+        padding: 8px;
+        font-size: 15px;
+        display: flex;    
+
+        .card-button{
+          border: 1px solid #101010;
+          border-radius: 2px;
+          padding: inherit;
+          font-family: $card_font_family;
+          margin: 1px 2px;
+          background: white;
+
+          a {
+            color: #101010;
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+  }
+
+  .card-item-group {
+    display: flex;
+
+    .card-item {
+      border: transparent;        
+      padding: 10px;
+    }
+  
+  }
+  
+
+
+
+   
+
