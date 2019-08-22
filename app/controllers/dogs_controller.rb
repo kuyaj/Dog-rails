@@ -1,5 +1,6 @@
 class DogsController < ApplicationController
   before_action :set_dog, only: [:show, :edit, :update, :destroy]
+  before_action :authorize
 
   def index
     @dogs = Dog.all.order("created_at DESC")

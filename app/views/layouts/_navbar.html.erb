@@ -1,15 +1,27 @@
  <nav class="navbar">
     <div class="navbar-brand"> Dog Shop</div>
-    <div class="navbar-item">
+   <% if current_user %>
+     <div class="navbar-item">
+     
       <%= link_to "Home", root_path, class: "button-control"  %>
-    </div>
+     </div>
      <div class="navbar-item">
       <%= link_to "Add New", new_dog_path , class: "button-control" , id: "add-new"%> 
-    </div>  
-    <div class="navbar-item">
+     </div>  
+     <div class="navbar-item">
+       <%= current_user.name %>
+     </div>
+     <div class="navbar-item">
+      <%= link_to "Logout", "#", class: "button-control" %>
+     </div>
+   <% else %>
+      <div class="navbar-item">
         <%= link_to "Login", sessions_login_path, class: "button-control" %>
-    </div>
-    <div class="navbar-item">
+      </div>
+       <div class="navbar-item">
         <%= link_to "Register", sessions_register_path, class: "button-control" %>
-    </div>
+      </div>
+   <% end %> 
+   
+    
   </nav>
