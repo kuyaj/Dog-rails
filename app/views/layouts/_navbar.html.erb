@@ -7,6 +7,9 @@
       <%= link_to "Add New", new_dog_path , class: "button-control" , id: "add-new"%> 
     </div>  
     <div class="navbar-item">
-      <a href="#" class="button-control">Login</a>
+        <%= link_to "Login", sessions_login_path, class: "button-control" %>
+    </div>
+    <div class="navbar-item">
+        <%= link_to "Register", sessions_register_path, class: "button-control" %>
     </div>
   </nav>

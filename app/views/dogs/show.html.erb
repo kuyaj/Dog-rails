@@ -1,6 +1,5 @@
 <div class="container">
 <div class="segment-group">
-
   <div class="segment">
       <div class="segment-label"><b>Name: </b><%= @dog.name %></div>
       <div class="segment-label"><b>Motto: </b><%= @dog.motto %></div>
@@ -10,7 +9,6 @@
          <button class="button-control"><%= link_to 'Remove', dog_path(@dog), method: 'delete', data: { confirm: 'Are you sure?' }%></button>   
       </div>
   </div>
-  
   <div class="segment-compact-show">
     <div class="segment-image"> 
            <% if @dog.avatar.attached? %>
