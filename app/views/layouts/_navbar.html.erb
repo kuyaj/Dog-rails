@@ -12,7 +12,7 @@
        <%= current_user.name %>
      </div>
      <div class="navbar-item">
-      <%= link_to "Logout", "#", class: "button-control" %>
+      <%= link_to "Logout", sessions_logout_path, class: "button-control" %>
      </div>
    <% else %>
       <div class="navbar-item">

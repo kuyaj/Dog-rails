@@ -2,11 +2,9 @@ Rails.application.routes.draw do
    
   get 'sessions/login'
   get 'sessions/register'
-  post '/login' => 'sessions#login_user' 
+  get 'sessions/logout'
+  post '/login', to: 'sessions#login_user' 
+  post '/users', to: 'sessions#create_new_user'
   root 'dogs#index'
   resources :dogs
-  # get 'dogs/index'
-  # get 'dogs/show'
-  # get 'dogs/new'
-  # get 'dogs/edit'
 end
