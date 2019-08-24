@@ -1,4 +1,4 @@
-This is Project Dog Rails looks like.
+This is how Dog Rails looks like.
 
 Home 
 ![Dog_rails](https://user-images.githubusercontent.com/22487392/63638852-dbc9cf00-c6bf-11e9-8536-c297200186a5.png)
