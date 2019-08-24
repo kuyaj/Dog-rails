@@ -1,24 +1,17 @@
-# README
+This is Project Dog Rails looks like.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Home 
+![Dog_rails](https://user-images.githubusercontent.com/22487392/63638852-dbc9cf00-c6bf-11e9-8536-c297200186a5.png)
 
-Things you may want to cover:
+Show
+![DOG_RAILS_SHOW](https://user-images.githubusercontent.com/22487392/63638910-8510c500-c6c0-11e9-8e1b-5ef680c73102.png)
 
-* Ruby version
+Add New
+![DOG_RAILS_ADD_NEW](https://user-images.githubusercontent.com/22487392/63638900-70ccc800-c6c0-11e9-8c0b-85bbc7ac8ed7.png)
 
-* System dependencies
+Login
+![DOG_RAILS_LOGIN](https://user-images.githubusercontent.com/22487392/63638905-7e824d80-c6c0-11e9-8fdd-890ff3d57d6c.png)
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Sign Up
+![DOG_RAILS_SIGNUP](https://user-images.githubusercontent.com/22487392/63639352-abd0fa80-c6c4-11e9-9adc-84a5d3c62bb9.png)
