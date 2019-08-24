@@ -1,7 +1,8 @@
 This is how Dog Rails looks like.
 
-Home 
-![Dog_rails](https://user-images.githubusercontent.com/22487392/63638852-dbc9cf00-c6bf-11e9-8536-c297200186a5.png)
+
+![Home](https://user-images.githubusercontent.com/22487392/63639566-6bbf4700-c6c7-11e9-9353-b505822485bd.png)
+
 
 Show
 ![DOG_RAILS_SHOW](https://user-images.githubusercontent.com/22487392/63638910-8510c500-c6c0-11e9-8e1b-5ef680c73102.png)
